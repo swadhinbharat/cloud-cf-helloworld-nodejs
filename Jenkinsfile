@@ -7,4 +7,11 @@ node() {
     stage('build') {
         mtaBuild script: this
     }
+    stage('deploy'){
+        steps{
+            cloudFoundryDeploy script:this, 
+            deployTool:'mtaDeployPlugin',
+            verbose: true
+        }
+    }
 }
