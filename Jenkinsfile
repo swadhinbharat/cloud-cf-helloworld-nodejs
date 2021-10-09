@@ -6,5 +6,6 @@ node() {
     }
     stage('build') {
         mtaBuild script: this
+        mtaBuildTool: 'cloudMbt'
     }
 }
