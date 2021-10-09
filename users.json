@@ -16,5 +16,11 @@
 		"color": "green",
 		"material": "polyester",
 		"id": 2
+	},
+	{
+		"name": "Teddy",
+		"color": "pink",
+		"material": "cotton",
+		"id": 3
 	}
 ]
