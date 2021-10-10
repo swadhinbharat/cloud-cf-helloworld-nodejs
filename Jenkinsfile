@@ -8,7 +8,7 @@ node() {
         mtaBuild script: this
     }
     stage('deploy') {
-        cloudFoundryDeploy script: this
+//         cloudFoundryDeploy script: this
         tmsUpload script:this, verbose: true, nodeName: 'Develop', credentialsId: 'TMS_Credential', mtaPath: './com.sap.piper.node.hello.world.mtar', customDescription: 'JobName: '+ env.JOB_NAME+' Build Nr: '+ env.BUILD_NUMBER
     }
 }
